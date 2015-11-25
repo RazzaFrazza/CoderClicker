@@ -1,0 +1,37 @@
+<head>
+  <title>CoffeeClicker</title>
+</head>
+
+<body>
+  {{> loginButtons}}
+  <h1 class="header">Welcome to CoffeeClicker</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+<h2 class="h2">You ({{user.username}}) have ${{user.money}} and make ${{user.rate}} per second!</h2>
+<div class="buttons">
+<input type="button" class="button code btn span4" value="Make Coffee ($25)" />
+{{#each items}}
+<input type="button" class="button buy btn span4" id="{{cost}}" value="Buy {{name}} (${{cost}})" />
+{{/each}}
+</div>
+<table class="leaderboard table table-striped">
+  <thead>
+    <th>Username</th><th>Money</th><th>Dollars per Second</th>
+  </thead>
+
+  {{#each players}}
+    {{> player}}
+  {{/each}}
+</table>
+</template>
+
+<template name="player">
+  <tr class="player">
+    <td class="name">{{username}}</td>
+    <td class="money">${{money}}</td>
+    <td class="rate">{{rate}} dps</td>
+  </tr>
+</template>

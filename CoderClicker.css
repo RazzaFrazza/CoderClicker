@@ -1,0 +1,107 @@
+/* CSS declarations go here */
+.login-buttons-dropdown-align-{
+   background-color: beige;
+   margin-top: 1em;
+   margin-left: 1em
+}
+
+
+
+.login-link-text {
+	color: darkgoldenrod;
+	font-size: 2em
+}
+
+.header {
+    background-color: darkgoldenrod;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 0.5em;
+    color: beige
+}
+
+.h2 {
+   color: burlywood;
+   text-align: center;
+   margin-bottom: 1em
+}
+
+.buttons {
+   text-align: center;
+   margin-bottom: 5em
+}
+
+/* Foundation Media Queries */ 
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { 
+
+.btn {
+	margin-top: 1em
+}
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { 
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+.btn {
+	margin-top: 1em
+}
+
+input.span4 {
+
+	margin: 1em;
+	font-size: 0.8em
+
+}
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { 
+
+
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+input.span4 {
+
+	margin: 1em;
+
+}
+
+
+
+ } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { 
+
+} /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { 
+
+input.span4 {
+
+	margin: 1em;
+
+}
+
+
+
+
+} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { 
+
+
+} /* min-width 1921px, xxlarge screens */
